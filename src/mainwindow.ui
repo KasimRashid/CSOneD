@@ -1,0 +1,1867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1221</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	background-image: url(&quot;res/background.png&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="login_button">
+    <property name="geometry">
+     <rect>
+      <x>1014</x>
+      <y>12</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background: gray;
+	color: white;
+	border-style: inset;
+	border-radius: 10px;
+}
+
+QPushButton:hover {
+	background: black;
+	color: pink;
+}</string>
+    </property>
+    <property name="text">
+     <string>Admin Login</string>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>1201</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QStackedWidget {
+	background-image: url(&quot;res/background.png&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+
+QLabel {
+	font-family: helvetica;
+	font-size: 30px;
+	color: white;
+}
+
+QGraphicsView {
+	border-style: inset;
+	border-radius: 60px;
+}
+
+QPushButton {
+	border-style: outset;
+	border-radius: 35px;
+}
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>14</number>
+    </property>
+    <widget class="QWidget" name="page_10">
+     <widget class="QFrame" name="michigan_flag">
+      <property name="geometry">
+       <rect>
+        <x>-20</x>
+        <y>-60</y>
+        <width>1231</width>
+        <height>651</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+	background-image: url(&quot;res/main_map.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position:  center;
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page">
+     <widget class="QPushButton" name="nextPage_3">
+      <property name="geometry">
+       <rect>
+        <x>1100</x>
+        <y>240</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/next-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="asu_campus">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>60</y>
+        <width>481</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/asu.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="asu_map">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>60</y>
+        <width>471</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/asu_map.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="asu_title">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>-10</y>
+        <width>421</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Arizona State University (ASU)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="asu_address">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>500</y>
+        <width>771</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: white;
+	font-size: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Address: Tempe, AZ                                         Phone: (855) 278-5080</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backPage_1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>240</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/back-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QPushButton" name="backPage_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>240</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/back-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nextPage_4">
+      <property name="geometry">
+       <rect>
+        <x>1100</x>
+        <y>240</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/next-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="uci_map">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>70</y>
+        <width>461</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/uci_map.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="uci_campus">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>70</y>
+        <width>501</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/uci.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="uci_title">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>-10</y>
+        <width>491</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>University of California Irvine (UCI)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="uci_address">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>510</y>
+        <width>771</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: white;
+	font-size: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Address: Irvine, CA 92697                                          Phone: (949) 824-5011</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QPushButton" name="nextPage_5">
+      <property name="geometry">
+       <rect>
+        <x>1100</x>
+        <y>240</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/next-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backPage_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>240</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/back-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="mit_map">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>70</y>
+        <width>461</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/mit_map.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="mit_campus">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>70</y>
+        <width>501</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/mit.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="mit_title">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>-10</y>
+        <width>621</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Massachusetts Institute of Technology (MIT)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="mit_address">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>510</y>
+        <width>881</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: white;
+	font-size: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Address: 77 Massachusetts Ave, Cambridge, MA 02139                       Phone: (617) 253-1000</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QLabel" name="northwestern_title">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>-10</y>
+        <width>221</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Northwestern</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nextPage_6">
+      <property name="geometry">
+       <rect>
+        <x>1100</x>
+        <y>240</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/next-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backPage_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>240</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/back-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="northwestern_campus">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>70</y>
+        <width>501</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/northwestern.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="northwestern_map">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>70</y>
+        <width>461</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/northwestern_map.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="northwestern_address">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>510</y>
+        <width>881</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: white;
+	font-size: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>633 Clark St, Evanston, IL 60208                        Phone:(847) 491-3741</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QLabel" name="ohio_title">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>11</y>
+        <width>279</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ohio State University</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ohio_address">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>510</y>
+        <width>701</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: white;
+	font-size: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Address: Columbus, OH 43210                               Phone: (614) 292-6446</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="ohio_campus">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>70</y>
+        <width>501</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/ohio.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backPage_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>240</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/back-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nextPage_7">
+      <property name="geometry">
+       <rect>
+        <x>1100</x>
+        <y>240</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/next-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="ohio_map">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>70</y>
+        <width>461</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/ohio_map.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_7">
+     <widget class="QPushButton" name="backPage_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>239</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/back-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="saddleback_map">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>69</y>
+        <width>461</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/saddleback_map.png&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="saddleback_address">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>500</y>
+        <width>881</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: white;
+	font-size: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string> Address: 28000 Marguerite Pkwy, Mission Viejo, CA 92692                   Phone: (949) 582-4500</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nextPage_8">
+      <property name="geometry">
+       <rect>
+        <x>1100</x>
+        <y>239</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/next-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="saddleback_campus">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>69</y>
+        <width>501</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/saddleback.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="saddleback_title">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>10</y>
+        <width>279</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Saddleback College</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_8">
+     <widget class="QGraphicsView" name="fullerton_campus">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>70</y>
+        <width>501</width>
+        <height>410</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/fullerton.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backPage_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>240</y>
+        <width>81</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/back-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fullerton_address">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>501</y>
+        <width>881</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: white;
+	font-size: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Address: 321 E Chapman Ave, Fullerton, CA 92832                        Phone: (714) 992-7000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fullerton_title">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>11</y>
+        <width>501</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>California State University, Fullerton</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="fullerton_map">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>70</y>
+        <width>461</width>
+        <height>410</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/fullerton_map.png&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nextPage_9">
+      <property name="geometry">
+       <rect>
+        <x>1100</x>
+        <y>240</y>
+        <width>81</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/next-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_9">
+     <widget class="QPushButton" name="nextPage_10">
+      <property name="geometry">
+       <rect>
+        <x>1100</x>
+        <y>239</y>
+        <width>81</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/next-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="michigan_map">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>69</y>
+        <width>461</width>
+        <height>410</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/michigan_map.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backPage_8">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>239</y>
+        <width>81</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/back-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="michigan_address">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>500</y>
+        <width>881</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: white;
+	font-size: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Address: 500 S State St, Ann Arbor, MI 48109                     Phone: (734) 764-1817</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="michigan_campus">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>78</y>
+        <width>501</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/michigan.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="michigan_title">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>10</y>
+        <width>501</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>University of  Michigan</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_11">
+     <widget class="QPushButton" name="backPage_9">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>240</y>
+        <width>81</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/back-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="ucla_map">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>70</y>
+        <width>461</width>
+        <height>410</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/ucla_map.gif&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nextPage_11">
+      <property name="geometry">
+       <rect>
+        <x>1100</x>
+        <y>240</y>
+        <width>81</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/next-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ucla_title">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>11</y>
+        <width>731</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>University of California, Los Angeles (UCLA)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ucla_address">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>501</y>
+        <width>881</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: white;
+	font-size: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Address: Los Angeles, CA 90095                                                    Phone:(310) 825-4321</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="ucla_campus">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>70</y>
+        <width>501</width>
+        <height>410</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/ucla.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_12">
+     <widget class="QGraphicsView" name="oregon_campus">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>70</y>
+        <width>501</width>
+        <height>410</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/oregon.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backPage_10">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>240</y>
+        <width>81</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/back-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="oregon_title">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>11</y>
+        <width>301</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>University of Oregon</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="oregon_map">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>70</y>
+        <width>461</width>
+        <height>410</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/oregon_map.png&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="oregon_address">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>501</y>
+        <width>881</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: white;
+	font-size: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Address: 1585 E 13th Ave, Eugene, 97403                                        Phone:(541) 346-1000</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nextPage_12">
+      <property name="geometry">
+       <rect>
+        <x>1100</x>
+        <y>240</y>
+        <width>81</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/next-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_13">
+     <widget class="QGraphicsView" name="texas_map">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>69</y>
+        <width>461</width>
+        <height>410</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/texas_map.png&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="texas_address">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>500</y>
+        <width>881</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: white;
+	font-size: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Address: Austin, TX 78712                                                       Phone:(512) 471-3434</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="texas_title">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>10</y>
+        <width>301</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>University of Texas</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nextPage_13">
+      <property name="geometry">
+       <rect>
+        <x>1100</x>
+        <y>239</y>
+        <width>81</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/next-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="texas_campus">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>69</y>
+        <width>501</width>
+        <height>410</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/texas.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backPage_11">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>239</y>
+        <width>81</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/back-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_14">
+     <widget class="QLabel" name="pacific_address">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>501</y>
+        <width>881</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: white;
+	font-size: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Address: 3601 Pacific Ave, Stockton, CA 95211                            Phone:(209) 946-2285</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nextPage_14">
+      <property name="geometry">
+       <rect>
+        <x>1100</x>
+        <y>240</y>
+        <width>81</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/next-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backPage_12">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>240</y>
+        <width>81</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/back-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="pacific_map">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>70</y>
+        <width>461</width>
+        <height>410</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/pacific_map.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="pacific_title">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>11</y>
+        <width>351</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>University of the Pacific</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="pacific_campus">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>70</y>
+        <width>501</width>
+        <height>410</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/pacific.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_15">
+     <widget class="QPushButton" name="backPage_13">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>240</y>
+        <width>81</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/back-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="wisconsin_title">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>11</y>
+        <width>351</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>University of Wisconsin</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="wisconsin_address">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>501</y>
+        <width>881</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: white;
+	font-size: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Address: Madison, WI 53706                                            Phone:(608) 263-2400</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nextPage_15">
+      <property name="geometry">
+       <rect>
+        <x>1100</x>
+        <y>240</y>
+        <width>81</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-image: url('res/next-xx.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}		</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="wisconsin_map">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>70</y>
+        <width>461</width>
+        <height>410</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/wisconsin_map.png&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="wisconsin_campus">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>70</y>
+        <width>501</width>
+        <height>410</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+	background-image: url(&quot;res/wisconsin.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QTableWidget" name="display_college_table">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>871</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget {
+	background: transparent;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="midLineWidth">
+       <number>2</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="purchase_button">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>480</y>
+        <width>221</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Comic Sans MS</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background: darkblue;
+	color: white;
+	border-style: outset;
+	border-radius: 20px;
+}
+
+QPushButton:hover {
+	background: lightblue;
+	color: darkbrown;
+}</string>
+      </property>
+      <property name="text">
+       <string>Online Purchasing</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="help_button">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>560</y>
+        <width>221</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Comic Sans MS</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Help</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="search_edit">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>150</y>
+        <width>221</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+	border-style: inset;
+	border-radius: 5px;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="display_label">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>20</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font-size: 16px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Display:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="display_comboBox">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>60</y>
+        <width>221</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Colleges</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Souvenirs</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="tour_button">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>480</y>
+        <width>221</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Comic Sans MS</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background: darkblue;
+	color: white;
+	border-style: outset;
+	border-radius: 20px;
+}
+
+QPushButton:hover {
+	background: lightblue;
+	color: darkbrown;
+}</string>
+      </property>
+      <property name="text">
+       <string>Begin Tour</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="search_label">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>110</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>helvetica</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font-size: 16px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Search by College name:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="colleges_table_button">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>161</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background: gray;
+	color: white;
+	border-style: inset;
+	border-radius: 10px;
+}
+
+QPushButton:hover {
+	background: black;
+	color: pink;
+}</string>
+    </property>
+    <property name="text">
+     <string>Visit Colleges Table</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="visitCampuses_button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>151</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background: gray;
+	color: white;
+	border-style: inset;
+	border-radius: 10px;
+}
+
+QPushButton:hover {
+	background: black;
+	color: pink;
+}</string>
+    </property>
+    <property name="text">
+     <string>Visit Campuses</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

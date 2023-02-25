@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>purchaseSouvenirs</class>
+ <widget class="QDialog" name="purchaseSouvenirs">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>638</width>
+    <height>519</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+	background-image: url(&quot;res/shop.gif&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+
+QLabel {
+	color: black;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+QPushButton {
+	background: gray;
+	border-style: inset;
+	border-radius: 15px;
+	color: lightgray;
+}
+
+QPushButton:hover  {
+	background: balck;
+	color: lightgray;
+}
+
+QComboBox {
+	background: lightgray;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>10</y>
+     <width>261</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Purchase Souvenirs Online</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_college">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>70</y>
+     <width>231</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Choose a college:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_souvenir">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>110</y>
+     <width>231</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Choose a souvenir:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>181</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Quantity</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_quanity">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>150</y>
+     <width>54</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border-style: inset;
+	border-radius: 2px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_add">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>230</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add to Cart</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>270</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Souvenir added.</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_receipt">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>180</y>
+     <width>371</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+	color: black;
+	font-weight: bold;
+	font-size: 16px;
+	border-style: outset;
+	border-radius: 5px;
+}
+</string>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_receipt">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>340</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Print Receipt</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_total">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>420</y>
+     <width>251</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+	border-style: outset;
+	border-radius: 5px;
+}</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>comboBox_college</zorder>
+  <zorder>comboBox_souvenir</zorder>
+  <zorder>label_3</zorder>
+  <zorder>pushButton_add</zorder>
+  <zorder>pushButton_receipt</zorder>
+  <zorder>lineEdit_quanity</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_add</zorder>
+  <zorder>tableWidget_receipt</zorder>
+  <zorder>tableWidget_total</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
