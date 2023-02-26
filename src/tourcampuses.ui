@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tourCampuses</class>
+ <widget class="QDialog" name="tourCampuses">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1197</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">tourCampuses {
+	background-image: url(&quot;res/college.jpg&quot;);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+	height: 100%;
+}
+
+QPushButton {
+	background-color: darkgray;
+	color: black;
+	border-style: groove;
+	border-radius: 10px;
+}
+
+QPushButton:hover {
+	backgeound-color: gray;
+	color: white;
+}
+
+QTableWidget, QTextBrowser {
+	background: transparent;
+	font: 16px;
+	color: black;
+	font-weight: bold;
+	border: 2px solid gray;
+	border-style: outset;
+	border-radius: 10px;
+}
+
+QLabel {
+	color: black;
+}
+</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>60</y>
+     <width>1191</width>
+     <height>701</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QLabel" name="startingCampus_label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>80</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Monotype Corsiva</family>
+       <pointsize>12</pointsize>
+       <italic>true</italic>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">label {
+	color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Starting Campus</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="distance_table">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>320</y>
+       <width>371</width>
+       <height>61</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_startColleges">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>580</y>
+       <width>271</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MV Boli</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Select Starting Campus</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="endingCampus_table">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>130</y>
+       <width>371</width>
+       <height>441</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="endingCollege_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>580</y>
+       <width>271</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MV Boli</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border-style: inset;
+	border-radius: 10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Select Ending Campus</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="startingCampus_table">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>130</y>
+       <width>371</width>
+       <height>441</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="distance_label">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>290</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MV Boli</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">label_4 {
+	font-color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>DISTANCE</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="endingCampus_label">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>90</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Monotype Corsiva</family>
+       <pointsize>12</pointsize>
+       <italic>true</italic>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">label_2 {
+	font-color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Ending Campus</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>801</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+QLabel:hover {
+	color: gray;
+}</string>
+     </property>
+     <property name="text">
+      <string>Select the Starting Point and the Ending Point for the distance to show</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QTableWidget" name="trip_table">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>50</y>
+       <width>331</width>
+       <height>521</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">tableWidget_3 {
+	font-color: white;
+}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="trip_label">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>20</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MV Boli</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">label_3 {
+	color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>TRIP PLAN</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="beginTrip_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>510</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MV Boli</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	background: #EFE3EA;
+	color: black;
+}
+
+
+QPushButton:hover {
+	background: #8C888A;
+	color: white;
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>BEGIN TRIP</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="selectedVisitColleges_table">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>50</y>
+       <width>361</width>
+       <height>441</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="collegeList_table">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>371</width>
+       <height>441</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addColleges_button">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>220</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover {
+	background: lightblue;
+}</string>
+     </property>
+     <property name="text">
+      <string>ADD</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="trip_label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>501</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MV Boli</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">label_3 {
+	color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Add the Colleges desired to visit and Start your Trip!</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="distance_label_2">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>640</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MV Boli</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">label_4 {
+	font-color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Distance Traveled</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="totalDistanceTraveled_table">
+     <property name="geometry">
+      <rect>
+       <x>1010</x>
+       <y>620</y>
+       <width>161</width>
+       <height>61</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="deleteColleges_button">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>300</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover {
+	background: red;
+}</string>
+     </property>
+     <property name="text">
+      <string>Delete</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_UCI">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>622</y>
+       <width>121</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover {
+	border-style: outset;
+	border-radius: 20px;
+	background-color: darkblue;
+	color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>UCI TOUR</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_MICHIGAN">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>620</y>
+       <width>121</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover {
+	border-style: outset;
+	border-radius: 20px;
+	background-color: darkblue;
+	color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>MICHIGAN TOUR</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="purchaseTour_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>620</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover {
+	border-style: outset;
+	border-radius: 20px;
+	background-color: darkgreen;
+	color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Purchase</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_SADDLEBACK">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>620</y>
+       <width>121</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover {
+	border-style: outset;
+	border-radius: 20px;
+	background-color: darkblue;
+	color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>SADDLEBACK TOUR</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <widget class="QTableWidget" name="trip_table_uci">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>80</y>
+       <width>1011</width>
+       <height>521</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTableWidget {
+	font-color: white;
+}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_uciTour">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>20</y>
+       <width>191</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>22</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>UCI TOUR</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="distance_table_uci">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>630</y>
+       <width>211</width>
+       <height>61</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="distance_label_3">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>650</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MV Boli</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">label_4 {
+	font-color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Distance Traveled</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="purchaseTour_uciTour">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>630</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover {
+	border-style: outset;
+	border-radius: 20px;
+	background-color: darkgreen;
+	color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Purchase</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_4">
+    <widget class="QTableWidget" name="trip_table_michigan">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>80</y>
+       <width>411</width>
+       <height>521</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">tableWidget_3 {
+	font-color: white;
+}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_michiganTour">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>20</y>
+       <width>341</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>22</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>MICHIGAN TOUR</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="distance_table_mi">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>630</y>
+       <width>201</width>
+       <height>61</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="distance_label_4">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>650</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MV Boli</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">label_4 {
+	font-color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Distance Traveled</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="trip_table_michigan_2">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>190</y>
+       <width>431</width>
+       <height>451</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">tableWidget_3 {
+	font-color: white;
+}</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_startMiTour">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>120</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Start the Tour</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>80</y>
+       <width>630</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_collegeNum">
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Number of college campuses to visit starting at University of Michigan:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_collegeNum">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+	border-style: inset;
+	border-radius: 5px;
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="purchaseTour_MichiganTour">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>630</y>
+       <width>111</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover {
+	border-style: outset;
+	border-radius: 20px;
+	background-color: darkgreen;
+	color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Purchase</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_5">
+    <widget class="QLabel" name="label_saddlebackTour">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>20</y>
+       <width>401</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>22</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>SADDLEBACK TOUR</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="trip_table_saddleback">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>80</y>
+       <width>1011</width>
+       <height>521</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">tableWidget_3 {
+	font-color: white;
+}</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="distance_table_sa">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>620</y>
+       <width>211</width>
+       <height>61</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="distance_label_5">
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>640</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MV Boli</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">label_4 {
+	font-color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Distance Traveled</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="purchaseTour_saddlebackTour">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>630</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover {
+	border-style: outset;
+	border-radius: 20px;
+	background-color: darkgreen;
+	color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Purchase</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="tripMode_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>10</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover {
+	background-color: darkblue;
+	color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Trip Mode</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="distanceMode_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>980</x>
+     <y>10</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover {
+	background-color: darkblue;
+	color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Distance Mode</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back_to_main">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover {
+	background: red;
+	color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>1171</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
