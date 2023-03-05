@@ -1,0 +1,144 @@
+Stories:
+
+1) As a student and an admin, I would like to be able to login. If the user logs in as a student, you’d be directed to a different home page and vice versa if you were to login as an admin. In order to demonstrate this we will show the professor the login in the program (app). (Navigation)
+	a) Description: The student and admin should be able to proceed with loginning into the program. Depending on who logs in, there will be displayed different options/ functionality for both the student and admin to maneuver through. If the user were to enter in the wrong username or password there would display an error message.
+	b) Tasks: 
+		- Create a GUI for the login page
+		- Create a different username and password for both the student and the admin
+		- After logging in, proceed to the homepage
+	c) Tests: With the GUI, use different usernames and passwords to verify that the login page works
+	d) Assignee: 
+	e) Estimation:
+	f) Priority:
+	g) Done: Successfully completed when the user is capable of logging in with a username and password, and displays the various menus of options for the user to select from.
+
+
+2) As a student, I want there to be a database of campuses, souvenirs and the location qt lite so that we can display them.
+	a) Description: a database that will hold the data of the campus, it should be dynamic and have the ability to add and remove campuses, souvenirs, and locations as needed.
+	b) Tasks: Create a database that has the ability to hold campuses, souvenirs and locations that are dynamic.
+	c) Tests: Be able to open qt lite and look through the database of campuses.
+	d) Assignee: 
+	e) Estimation:
+	f) Priority: S1
+	g) Done: when there is a database that dynamically holds any amount of campuses, their souvenirs and locations.
+
+
+3) As a student, I would like to be able to select a button to view the list of colleges and their distance relative to saddleback college.
+	a) Description: The student should be able to view and select from a menu of buttons the option to display the list of colleges with their distances relative to Saddleback College.
+	b) Tasks: When the button is clicked call the database that stores the names of the colleges and their distance. Create a button and write the function to display the list of colleges with their distance relative to Saddleback College.
+	c) Tests: Be able to execute the program in qtlite and view the list of colleges with their relative distance from Saddleback College from the database.
+	d) Assignee: 
+	e) Estimation:
+	f) Priority: S1
+	g) Done: When there is a database that can dynamically hold any amount of colleges with their distance relative to Saddleback college 
+
+
+4) As a student,  I would like to be able to see the merchandise that the colleges carry and at what price.
+	a) Description: The student should be able to view and select from a menu of buttons, once pressed the student should be able to view a display of colleges, the merchandise they carry as well as the price.
+	b) Tasks: Create a database for souvenirs that stores the college name, the merchandise they carry, and its price. Create a button that when pressed, displays the list of colleges, the merchandise that they carry and its price.
+	c) Tests: Be able to execute the program in qtlite and view the database by clicking on the button.
+	d) Assignee: 
+	e) Estimation:
+	f) Priority: Sprint 1
+	g) Done: When there is a database that can dynamically hold any amount of campuses, their souvenirs and their prices.
+
+
+5) As an administrator, I want a button on the main page that allows me to alter database values by adding Colleges/Souvenirs (maintenance)
+	a) Description: The admin should be able to select from a menu of options that allows for the adding of new campuses and souvenirs.
+	b) Tasks: Create various buttons for the admin to alter database values, adding colleges , souvenirs, as well as altering the prices of the souvenirs (whether manually or by use of input file)
+	c) Tests: After logging in as an admin, be able to view the menu of options. Test the functionality of the buttons by adding colleges/souvenirs and check to make sure the values can be altered by taking in an input file.
+	d) Assignee: 
+	e) Estimation:
+	f) Priority:
+	g) Done: When the “add Campus” button is fully functional, it should allow the admin to add a campus, and souvenirs either manually or by use of input file.
+
+
+6) As an administrator, I would like to be able to add/remove a souvenir and alter its price (maintenance)
+	a) Description: The admin should be able to add or remove souvenirs from a college and or adjust the prices.
+	b) Tasks: Create the buttons and functionality enabling the admin to add, remove, or alter the price of the souvenirs of a college.
+	c) Tests: Verify that an admin can add, remove, or adjust the prices of the souvenirs of a college manually
+	d) Assignee:
+	e) Estimation:
+	f) Priority:
+	g) Done: When the admin is capable of using all the features to make various changes to the souvenirs of a given college.
+
+
+7) As a student, I would like the option to customize my own trip by selecting colleges.
+	a) Description: There should be a button on the user main page that allows them to select and unselect campuses to their list
+	b) Tasks: Create an add button that will add a college to their list.  As well as a remove button that will remove a college from their list
+	c) Tests: Being able to click on the button that adds or removes a campus and have the campus added/removed from the list.
+	d) Assignee:  
+	e) Estimation: 
+	f) Priority: 
+	g) Done: When the student is successfully able to add and remove a college from their list
+
+
+8) As a student, I would like to be given the option to purchase souvenirs when viewing/ selecting a college.
+	a) Description: There should be a button when selecting a college to view their list of merchandise along with the price.
+	b) Tasks: Create a button to display the list of merchandise for that specific college as well as write the function to display that list when the button is clicked.
+	c) Tests: Navigate through the program selecting colleges and view the list of available merchandise (check to make sure that the items available are accurate)
+	d) Assignee:
+	e) Estimation:
+	f) Priority:
+	g) Done: When the list of merchandise is displayed for the given college when the option/button is clicked.
+
+
+9) As a student, I would like for my souvenirs to be stored in a cart so that I may view all of the products I'm interested in before purchasing.
+	a) Description: The student should be able to view the merchandise that they are interested in (selected previously from the other pages)
+	b) Tasks: Create a shopping cart button as well as write the function to store the items that the user is interested in.
+	c) Tests: Click on the button the cart should display empty if there is nothing stored. Navigate the pages and select some products. Ensure that the products of interest are stored in the cart.
+	d) Assignee:
+	e) Estimation:
+	f) Priority:
+	g) Done: When the user is able to add/remove items from their shopping cart as well as view the selected items in their cart.
+
+
+10) As a student, I would like to plan a trip from saddleback and visit the other colleges in the most efficient order (display the total distance traveled)
+	a) Description: Without choosing any campuses, there should be a button that calculates a trip for the student that will go through all the campuses, even with user or administrator added campuses  	
+	b) Tasks: In the homepage, add room for a button called “Calculate Quickest Trip From Starting Location” that takes a starting location, and runs through all campuses (both added and from the initial list)
+	c) Test: Test the buttons using qt and ensure that the program outputs the proper/accurate results
+	d) Assignee:
+	e) Estimation:
+	f) Priority:
+	g) Done: When the button is capable of calculating a base trip through all the campuses and displays the information back to the student.
+
+
+11) As a student, I would like to plan the shortest trip beginning at ASU by entering the number of colleges I wish to visit and create the most optimal path in order to do so efficiently.
+	a) Description: Pulls a list of colleges, after the user clicks a button read in the the list of colleges and create an optimal route from the designated starting point
+	b) Tasks: Create an algorithm/function to calculate the distance from one point to another and one compares one route to another  and optimizes
+	c) Tests: Verify that the distance is correct and that it is the most optimal route
+	d) Assignee: 
+	e) Estimation: 
+	f) Priority: 
+	g) Done: When the button is fully functional it will allow students to know optimized route to tour colleges from starting point
+
+
+12) As a student, I would like to be able to visit the 13 college campuses starting from UCI.
+	a) Description: The student should be able to select a predetermined route to visit the 13 colleges starting at UCI.
+	b) Task: Create a button to execute the function. The function should calculate the total distance traveled and output it to the user.
+	c) Tests: Verify that the distance traveled is accurate.
+	d) Assignee:
+	e) Estimation:
+	f) Priority:
+	g) Done: When it is a selection that the user is capable of making and outputs the accurate distance.
+
+
+13) As an administrator, I want a button on the main page to show the student the quickest and most efficient way to the campuses (even after they add new campuses), and the travel time so that the student can plan his trip better.
+	a) Description: Without choosing any campuses, there should be a button that calculates a trip for the student that will go through all the campuses, even with user or administrator added campuses.
+	b) Tasks: In the homepage, add room for a button called “Calculate Quickest Trip from Starting Location” that takes a starting location, and runs through all campuses (both added and from the initial list)
+	c) Tests: Test the button using qt and ensure that the program outputs the proper/accurate results.
+	d) Assignee: Trevor
+	e) Estimation:
+	f) Priority:
+	g) Done: A button that correctly calculates a base trip through all the campuses and displays that information to the student.
+
+
+14) As a student, I want the home page to look good and presentable so that I feel like it is a professional app.
+	a) Description: The student and admin should be presented after logging in to a homepage that allows each respective user to access the program.
+	b) Tasks: Create a homepage that shows a comprehensive list of colleges that are available to tour. Provide all the necessary information on each respective college’s souvenirs
+	c) Tests: After logging in, check to see if all colleges are present. Login to through both the admin and student, and test to see if the homepage presents for both logins.
+	d) Assignee: Trevor
+	e) Estimation:
+	f) Priority:
+	g) Done: A homepage that shows all the initial information about colleges and souvenirs concisely and is easy to maneuver with minimal issues. All tasks are done, and the homepage doesn’t conflict with anything.
+
