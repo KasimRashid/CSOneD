@@ -1,0 +1,584 @@
+\hypertarget{ui__studentpage_8h_source}{}\doxysection{ui\+\_\+studentpage.\+h}
+\label{ui__studentpage_8h_source}\index{C:/Users/Jacki/Downloads/CSOneD-\/-\/First-\/Project-\/-\/New-\/Menu/CSOneD-\/-\/First-\/Project-\/-\/New-\/Menu/Qt/ui\_studentpage.h@{C:/Users/Jacki/Downloads/CSOneD-\/-\/First-\/Project-\/-\/New-\/Menu/CSOneD-\/-\/First-\/Project-\/-\/New-\/Menu/Qt/ui\_studentpage.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/********************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ Form\ generated\ from\ reading\ UI\ file\ 'studentpage.ui'}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ Created\ by:\ Qt\ User\ Interface\ Compiler\ version\ 5.12.12}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**}}
+\DoxyCodeLine{00006\ \textcolor{comment}{**\ WARNING!\ All\ changes\ made\ in\ this\ file\ will\ be\ lost\ when\ recompiling\ UI\ file!}}
+\DoxyCodeLine{00007\ \textcolor{comment}{********************************************************************************/}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ UI\_STUDENTPAGE\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ UI\_STUDENTPAGE\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QtCore/QVariant>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QtWidgets/QApplication>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QtWidgets/QComboBox>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QtWidgets/QGridLayout>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QtWidgets/QHBoxLayout>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QtWidgets/QHeaderView>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLabel>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QtWidgets/QListView>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QtWidgets/QListWidget>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QtWidgets/QMainWindow>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <QtWidgets/QMenuBar>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <QtWidgets/QPlainTextEdit>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <QtWidgets/QPushButton>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <QtWidgets/QSpinBox>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <QtWidgets/QStackedWidget>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ <QtWidgets/QStatusBar>}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ <QtWidgets/QTableView>}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ <QtWidgets/QVBoxLayout>}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ <QtWidgets/QWidget>}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui__studentpage}{Ui\_studentpage}}}
+\DoxyCodeLine{00035\ \{}
+\DoxyCodeLine{00036\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ \ \ \ \ QWidget\ *centralwidget;}
+\DoxyCodeLine{00038\ \ \ \ \ QStackedWidget\ *stackedWidget;}
+\DoxyCodeLine{00039\ \ \ \ \ QWidget\ *StudentSelect;}
+\DoxyCodeLine{00040\ \ \ \ \ QPushButton\ *campDB\_button;}
+\DoxyCodeLine{00041\ \ \ \ \ QLabel\ *welcome\_label;}
+\DoxyCodeLine{00042\ \ \ \ \ QLabel\ *campDB\_texEdit;}
+\DoxyCodeLine{00043\ \ \ \ \ QLabel\ *tourType\_label;}
+\DoxyCodeLine{00044\ \ \ \ \ QPushButton\ *UCI\_button;}
+\DoxyCodeLine{00045\ \ \ \ \ QPushButton\ *Saddle\_button;}
+\DoxyCodeLine{00046\ \ \ \ \ QPushButton\ *ASU\_button;}
+\DoxyCodeLine{00047\ \ \ \ \ QPushButton\ *custom\_button;}
+\DoxyCodeLine{00048\ \ \ \ \ QPlainTextEdit\ *UCI\_textEdit;}
+\DoxyCodeLine{00049\ \ \ \ \ QPlainTextEdit\ *Saddle\_textEdit;}
+\DoxyCodeLine{00050\ \ \ \ \ QPlainTextEdit\ *ASU\_textEdit;}
+\DoxyCodeLine{00051\ \ \ \ \ QPlainTextEdit\ *custom\_textEdit;}
+\DoxyCodeLine{00052\ \ \ \ \ QPushButton\ *back\_button\_select;}
+\DoxyCodeLine{00053\ \ \ \ \ QPlainTextEdit\ *tour\_textEdit;}
+\DoxyCodeLine{00054\ \ \ \ \ QWidget\ *databaseDisplay;}
+\DoxyCodeLine{00055\ \ \ \ \ QTableView\ *tableView;}
+\DoxyCodeLine{00056\ \ \ \ \ QComboBox\ *campus\_combo;}
+\DoxyCodeLine{00057\ \ \ \ \ QLabel\ *campus\_label;}
+\DoxyCodeLine{00058\ \ \ \ \ QLabel\ *database\_label;}
+\DoxyCodeLine{00059\ \ \ \ \ QPushButton\ *other\_button;}
+\DoxyCodeLine{00060\ \ \ \ \ QPushButton\ *souv\_button;}
+\DoxyCodeLine{00061\ \ \ \ \ QPushButton\ *back\_button\_db;}
+\DoxyCodeLine{00062\ \ \ \ \ QWidget\ *startCollegeTour;}
+\DoxyCodeLine{00063\ \ \ \ \ QLabel\ *start\_label;}
+\DoxyCodeLine{00064\ \ \ \ \ QPushButton\ *enter\_button\_1;}
+\DoxyCodeLine{00065\ \ \ \ \ QPushButton\ *back\_button\_custom;}
+\DoxyCodeLine{00066\ \ \ \ \ QLabel\ *avali\_label\_1;}
+\DoxyCodeLine{00067\ \ \ \ \ QComboBox\ *start\_combo;}
+\DoxyCodeLine{00068\ \ \ \ \ QListView\ *start\_listView;}
+\DoxyCodeLine{00069\ \ \ \ \ QWidget\ *collegeTour;}
+\DoxyCodeLine{00070\ \ \ \ \ QLabel\ *next\_label;}
+\DoxyCodeLine{00071\ \ \ \ \ QPushButton\ *done\_button;}
+\DoxyCodeLine{00072\ \ \ \ \ QPushButton\ *enter\_button\_2;}
+\DoxyCodeLine{00073\ \ \ \ \ QListView\ *select\_listView;}
+\DoxyCodeLine{00074\ \ \ \ \ QListView\ *avali\_listView;}
+\DoxyCodeLine{00075\ \ \ \ \ QLabel\ *avali\_label\_2;}
+\DoxyCodeLine{00076\ \ \ \ \ QLabel\ *select\_label;}
+\DoxyCodeLine{00077\ \ \ \ \ QComboBox\ *next\_combo;}
+\DoxyCodeLine{00078\ \ \ \ \ QPushButton\ *back\_button\_general;}
+\DoxyCodeLine{00079\ \ \ \ \ QWidget\ *souvenirShop;}
+\DoxyCodeLine{00080\ \ \ \ \ QComboBox\ *selectCampus\_comboBox;}
+\DoxyCodeLine{00081\ \ \ \ \ QTableView\ *souv\_tableView;}
+\DoxyCodeLine{00082\ \ \ \ \ QTableView\ *souvCart\_tableView;}
+\DoxyCodeLine{00083\ \ \ \ \ QPushButton\ *backFromSouv\_button;}
+\DoxyCodeLine{00084\ \ \ \ \ QPushButton\ *addSouvenir\_button;}
+\DoxyCodeLine{00085\ \ \ \ \ QComboBox\ *souv\_comboBox;}
+\DoxyCodeLine{00086\ \ \ \ \ QSpinBox\ *quantity\_spinBox;}
+\DoxyCodeLine{00087\ \ \ \ \ QLabel\ *souv\_label;}
+\DoxyCodeLine{00088\ \ \ \ \ QLabel\ *souvCart\_label;}
+\DoxyCodeLine{00089\ \ \ \ \ QLabel\ *total\_label;}
+\DoxyCodeLine{00090\ \ \ \ \ QLabel\ *dollarSign;}
+\DoxyCodeLine{00091\ \ \ \ \ QPushButton\ *checkout\_button;}
+\DoxyCodeLine{00092\ \ \ \ \ QLabel\ *totalCart\_label;}
+\DoxyCodeLine{00093\ \ \ \ \ QWidget\ *asuCollegeTour;}
+\DoxyCodeLine{00094\ \ \ \ \ QPushButton\ *back\_button\_asu;}
+\DoxyCodeLine{00095\ \ \ \ \ QPushButton\ *enter\_button\_asu;}
+\DoxyCodeLine{00096\ \ \ \ \ QLabel\ *asu\_label\_title;}
+\DoxyCodeLine{00097\ \ \ \ \ QLabel\ *asu\_label\_prompt;}
+\DoxyCodeLine{00098\ \ \ \ \ QComboBox\ *asu\_combo;}
+\DoxyCodeLine{00099\ \ \ \ \ QWidget\ *SortCollegeTour;}
+\DoxyCodeLine{00100\ \ \ \ \ QWidget\ *horizontalLayoutWidget;}
+\DoxyCodeLine{00101\ \ \ \ \ QHBoxLayout\ *horizontalLayout\_3;}
+\DoxyCodeLine{00102\ \ \ \ \ QLabel\ *total\_dist\_label;}
+\DoxyCodeLine{00103\ \ \ \ \ QLabel\ *distanceNum\_label;}
+\DoxyCodeLine{00104\ \ \ \ \ QLabel\ *label\_2;}
+\DoxyCodeLine{00105\ \ \ \ \ QWidget\ *verticalLayoutWidget;}
+\DoxyCodeLine{00106\ \ \ \ \ QVBoxLayout\ *verticalLayout\_3;}
+\DoxyCodeLine{00107\ \ \ \ \ QLabel\ *souvTitleLabel;}
+\DoxyCodeLine{00108\ \ \ \ \ QHBoxLayout\ *horizontalLayout\_7;}
+\DoxyCodeLine{00109\ \ \ \ \ QListView\ *souvFinal\_listView;}
+\DoxyCodeLine{00110\ \ \ \ \ QListView\ *quantityFinal\_listView;}
+\DoxyCodeLine{00111\ \ \ \ \ QGridLayout\ *gridLayout\_2;}
+\DoxyCodeLine{00112\ \ \ \ \ QPushButton\ *finish\_button;}
+\DoxyCodeLine{00113\ \ \ \ \ QHBoxLayout\ *horizontalLayout\_5;}
+\DoxyCodeLine{00114\ \ \ \ \ QLabel\ *totalCost\_label;}
+\DoxyCodeLine{00115\ \ \ \ \ QLabel\ *totalNum\_label;}
+\DoxyCodeLine{00116\ \ \ \ \ QLabel\ *startCampus\_label;}
+\DoxyCodeLine{00117\ \ \ \ \ QWidget\ *verticalLayoutWidget\_2;}
+\DoxyCodeLine{00118\ \ \ \ \ QVBoxLayout\ *verticalLayout\_4;}
+\DoxyCodeLine{00119\ \ \ \ \ QGridLayout\ *gridLayout\_4;}
+\DoxyCodeLine{00120\ \ \ \ \ QLabel\ *label;}
+\DoxyCodeLine{00121\ \ \ \ \ QListWidget\ *sort\_listWidget;}
+\DoxyCodeLine{00122\ \ \ \ \ QMenuBar\ *menubar;}
+\DoxyCodeLine{00123\ \ \ \ \ QStatusBar\ *statusbar;}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{void}\ setupUi(QMainWindow\ *\mbox{\hyperlink{classstudentpage}{studentpage}})}
+\DoxyCodeLine{00126\ \ \ \ \ \{}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstudentpage}{studentpage}}-\/>objectName().isEmpty())}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstudentpage}{studentpage}}-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}studentpage"{}}));}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstudentpage}{studentpage}}-\/>resize(912,\ 560);}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ centralwidget\ =\ \textcolor{keyword}{new}\ QWidget(\mbox{\hyperlink{classstudentpage}{studentpage}});}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ centralwidget-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}centralwidget"{}}));}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ stackedWidget\ =\ \textcolor{keyword}{new}\ QStackedWidget(centralwidget);}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ stackedWidget-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}stackedWidget"{}}));}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ stackedWidget-\/>setGeometry(QRect(0,\ 0,\ 911,\ 541));}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ stackedWidget-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(180,\ 244,\ 255)"{}}));}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ StudentSelect\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ StudentSelect-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}StudentSelect"{}}));}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ campDB\_button\ =\ \textcolor{keyword}{new}\ QPushButton(StudentSelect);}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ campDB\_button-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}campDB\_button"{}}));}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ campDB\_button-\/>setGeometry(QRect(370,\ 110,\ 281,\ 91));}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ QFont\ font;}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ font.setPointSize(10);}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ campDB\_button-\/>setFont(font);}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ campDB\_button-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ welcome\_label\ =\ \textcolor{keyword}{new}\ QLabel(StudentSelect);}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ welcome\_label-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}welcome\_label"{}}));}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ welcome\_label-\/>setGeometry(QRect(380,\ 0,\ 131,\ 41));}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ QFont\ font1;}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ font1.setPointSize(12);}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ welcome\_label-\/>setFont(font1);}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ welcome\_label-\/>setTextFormat(Qt::PlainText);}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ welcome\_label-\/>setScaledContents(\textcolor{keyword}{false});}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ campDB\_texEdit\ =\ \textcolor{keyword}{new}\ QLabel(StudentSelect);}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ campDB\_texEdit-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}campDB\_texEdit"{}}));}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ campDB\_texEdit-\/>setGeometry(QRect(380,\ 60,\ 261,\ 31));}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ tourType\_label\ =\ \textcolor{keyword}{new}\ QLabel(StudentSelect);}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ tourType\_label-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}tourType\_label"{}}));}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ tourType\_label-\/>setGeometry(QRect(340,\ 230,\ 211,\ 41));}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ UCI\_button\ =\ \textcolor{keyword}{new}\ QPushButton(StudentSelect);}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ UCI\_button-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}UCI\_button"{}}));}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ UCI\_button-\/>setGeometry(QRect(490,\ 380,\ 151,\ 91));}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ UCI\_button-\/>setFont(font1);}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ UCI\_button-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ Saddle\_button\ =\ \textcolor{keyword}{new}\ QPushButton(StudentSelect);}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ Saddle\_button-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}Saddle\_button"{}}));}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ Saddle\_button-\/>setGeometry(QRect(50,\ 380,\ 171,\ 91));}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ Saddle\_button-\/>setFont(font);}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ Saddle\_button-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ ASU\_button\ =\ \textcolor{keyword}{new}\ QPushButton(StudentSelect);}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ ASU\_button-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}ASU\_button"{}}));}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ ASU\_button-\/>setGeometry(QRect(270,\ 380,\ 161,\ 91));}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ ASU\_button-\/>setFont(font);}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ ASU\_button-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ custom\_button\ =\ \textcolor{keyword}{new}\ QPushButton(StudentSelect);}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ custom\_button-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}custom\_button"{}}));}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ custom\_button-\/>setGeometry(QRect(710,\ 380,\ 151,\ 91));}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ custom\_button-\/>setFont(font);}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ custom\_button-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ UCI\_textEdit\ =\ \textcolor{keyword}{new}\ QPlainTextEdit(StudentSelect);}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ UCI\_textEdit-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}UCI\_textEdit"{}}));}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ UCI\_textEdit-\/>setGeometry(QRect(460,\ 280,\ 211,\ 91));}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ UCI\_textEdit-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ Saddle\_textEdit\ =\ \textcolor{keyword}{new}\ QPlainTextEdit(StudentSelect);}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ Saddle\_textEdit-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}Saddle\_textEdit"{}}));}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ Saddle\_textEdit-\/>setGeometry(QRect(20,\ 280,\ 211,\ 91));}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ Saddle\_textEdit-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ ASU\_textEdit\ =\ \textcolor{keyword}{new}\ QPlainTextEdit(StudentSelect);}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ ASU\_textEdit-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}ASU\_textEdit"{}}));}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ ASU\_textEdit-\/>setGeometry(QRect(240,\ 280,\ 211,\ 91));}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ ASU\_textEdit-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ custom\_textEdit\ =\ \textcolor{keyword}{new}\ QPlainTextEdit(StudentSelect);}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ custom\_textEdit-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}custom\_textEdit"{}}));}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ custom\_textEdit-\/>setGeometry(QRect(680,\ 280,\ 211,\ 91));}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ custom\_textEdit-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ back\_button\_select\ =\ \textcolor{keyword}{new}\ QPushButton(StudentSelect);}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ back\_button\_select-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}back\_button\_select"{}}));}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ back\_button\_select-\/>setGeometry(QRect(670,\ 20,\ 112,\ 34));}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ back\_button\_select-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ tour\_textEdit\ =\ \textcolor{keyword}{new}\ QPlainTextEdit(StudentSelect);}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ tour\_textEdit-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}tour\_textEdit"{}}));}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ tour\_textEdit-\/>setGeometry(QRect(30,\ 40,\ 291,\ 161));}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ tour\_textEdit-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ stackedWidget-\/>addWidget(StudentSelect);}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ databaseDisplay\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ databaseDisplay-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}databaseDisplay"{}}));}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ tableView\ =\ \textcolor{keyword}{new}\ QTableView(databaseDisplay);}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ tableView-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}tableView"{}}));}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ tableView-\/>setGeometry(QRect(20,\ 50,\ 781,\ 371));}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ tableView-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ campus\_combo\ =\ \textcolor{keyword}{new}\ QComboBox(databaseDisplay);}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ campus\_combo-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}campus\_combo"{}}));}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ campus\_combo-\/>setGeometry(QRect(20,\ 460,\ 281,\ 26));}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ campus\_combo-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ campus\_label\ =\ \textcolor{keyword}{new}\ QLabel(databaseDisplay);}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ campus\_label-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}campus\_label"{}}));}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ campus\_label-\/>setGeometry(QRect(20,\ 430,\ 121,\ 20));}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ database\_label\ =\ \textcolor{keyword}{new}\ QLabel(databaseDisplay);}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ database\_label-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}database\_label"{}}));}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ database\_label-\/>setGeometry(QRect(20,\ 10,\ 371,\ 20));}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ other\_button\ =\ \textcolor{keyword}{new}\ QPushButton(databaseDisplay);}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ other\_button-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}other\_button"{}}));}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ other\_button-\/>setGeometry(QRect(320,\ 450,\ 141,\ 34));}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ other\_button-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ souv\_button\ =\ \textcolor{keyword}{new}\ QPushButton(databaseDisplay);}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ souv\_button-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}souv\_button"{}}));}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ souv\_button-\/>setGeometry(QRect(480,\ 450,\ 141,\ 34));}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ souv\_button-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ back\_button\_db\ =\ \textcolor{keyword}{new}\ QPushButton(databaseDisplay);}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ back\_button\_db-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}back\_button\_db"{}}));}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ back\_button\_db-\/>setGeometry(QRect(690,\ 10,\ 112,\ 34));}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ back\_button\_db-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ stackedWidget-\/>addWidget(databaseDisplay);}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ startCollegeTour\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ startCollegeTour-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}startCollegeTour"{}}));}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ start\_label\ =\ \textcolor{keyword}{new}\ QLabel(startCollegeTour);}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ start\_label-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}start\_label"{}}));}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ start\_label-\/>setGeometry(QRect(40,\ 390,\ 131,\ 20));}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ enter\_button\_1\ =\ \textcolor{keyword}{new}\ QPushButton(startCollegeTour);}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ enter\_button\_1-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}enter\_button\_1"{}}));}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ enter\_button\_1-\/>setGeometry(QRect(290,\ 430,\ 112,\ 34));}
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ enter\_button\_1-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ back\_button\_custom\ =\ \textcolor{keyword}{new}\ QPushButton(startCollegeTour);}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ back\_button\_custom-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}back\_button\_custom"{}}));}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ back\_button\_custom-\/>setGeometry(QRect(690,\ 20,\ 112,\ 34));}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ back\_button\_custom-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ avali\_label\_1\ =\ \textcolor{keyword}{new}\ QLabel(startCollegeTour);}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ avali\_label\_1-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}avali\_label\_1"{}}));}
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ avali\_label\_1-\/>setGeometry(QRect(40,\ 30,\ 151,\ 20));}
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ start\_combo\ =\ \textcolor{keyword}{new}\ QComboBox(startCollegeTour);}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ start\_combo-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}start\_combo"{}}));}
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ start\_combo-\/>setGeometry(QRect(170,\ 390,\ 231,\ 26));}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ start\_combo-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ start\_listView\ =\ \textcolor{keyword}{new}\ QListView(startCollegeTour);}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ start\_listView-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}start\_listView"{}}));}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ start\_listView-\/>setEnabled(\textcolor{keyword}{true});}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ start\_listView-\/>setGeometry(QRect(40,\ 60,\ 361,\ 311));}
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ start\_listView-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ stackedWidget-\/>addWidget(startCollegeTour);}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ collegeTour\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ collegeTour-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}collegeTour"{}}));}
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ next\_label\ =\ \textcolor{keyword}{new}\ QLabel(collegeTour);}
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ next\_label-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}next\_label"{}}));}
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ next\_label-\/>setGeometry(QRect(40,\ 380,\ 101,\ 31));}
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ done\_button\ =\ \textcolor{keyword}{new}\ QPushButton(collegeTour);}
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ done\_button-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}done\_button"{}}));}
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ done\_button-\/>setGeometry(QRect(290,\ 430,\ 112,\ 34));}
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ done\_button-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ enter\_button\_2\ =\ \textcolor{keyword}{new}\ QPushButton(collegeTour);}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ enter\_button\_2-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}enter\_button\_2"{}}));}
+\DoxyCodeLine{00270\ \ \ \ \ \ \ \ \ enter\_button\_2-\/>setGeometry(QRect(150,\ 430,\ 112,\ 34));}
+\DoxyCodeLine{00271\ \ \ \ \ \ \ \ \ enter\_button\_2-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00272\ \ \ \ \ \ \ \ \ select\_listView\ =\ \textcolor{keyword}{new}\ QListView(collegeTour);}
+\DoxyCodeLine{00273\ \ \ \ \ \ \ \ \ select\_listView-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}select\_listView"{}}));}
+\DoxyCodeLine{00274\ \ \ \ \ \ \ \ \ select\_listView-\/>setGeometry(QRect(430,\ 60,\ 361,\ 311));}
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ select\_listView-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ avali\_listView\ =\ \textcolor{keyword}{new}\ QListView(collegeTour);}
+\DoxyCodeLine{00277\ \ \ \ \ \ \ \ \ avali\_listView-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}avali\_listView"{}}));}
+\DoxyCodeLine{00278\ \ \ \ \ \ \ \ \ avali\_listView-\/>setEnabled(\textcolor{keyword}{true});}
+\DoxyCodeLine{00279\ \ \ \ \ \ \ \ \ avali\_listView-\/>setGeometry(QRect(40,\ 60,\ 361,\ 311));}
+\DoxyCodeLine{00280\ \ \ \ \ \ \ \ \ avali\_listView-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00281\ \ \ \ \ \ \ \ \ avali\_label\_2\ =\ \textcolor{keyword}{new}\ QLabel(collegeTour);}
+\DoxyCodeLine{00282\ \ \ \ \ \ \ \ \ avali\_label\_2-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}avali\_label\_2"{}}));}
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ avali\_label\_2-\/>setGeometry(QRect(40,\ 30,\ 151,\ 20));}
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ select\_label\ =\ \textcolor{keyword}{new}\ QLabel(collegeTour);}
+\DoxyCodeLine{00285\ \ \ \ \ \ \ \ \ select\_label-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}select\_label"{}}));}
+\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ select\_label-\/>setGeometry(QRect(430,\ 30,\ 151,\ 20));}
+\DoxyCodeLine{00287\ \ \ \ \ \ \ \ \ next\_combo\ =\ \textcolor{keyword}{new}\ QComboBox(collegeTour);}
+\DoxyCodeLine{00288\ \ \ \ \ \ \ \ \ next\_combo-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}next\_combo"{}}));}
+\DoxyCodeLine{00289\ \ \ \ \ \ \ \ \ next\_combo-\/>setGeometry(QRect(150,\ 390,\ 251,\ 26));}
+\DoxyCodeLine{00290\ \ \ \ \ \ \ \ \ next\_combo-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00291\ \ \ \ \ \ \ \ \ back\_button\_general\ =\ \textcolor{keyword}{new}\ QPushButton(collegeTour);}
+\DoxyCodeLine{00292\ \ \ \ \ \ \ \ \ back\_button\_general-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}back\_button\_general"{}}));}
+\DoxyCodeLine{00293\ \ \ \ \ \ \ \ \ back\_button\_general-\/>setGeometry(QRect(680,\ 10,\ 112,\ 34));}
+\DoxyCodeLine{00294\ \ \ \ \ \ \ \ \ back\_button\_general-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00295\ \ \ \ \ \ \ \ \ stackedWidget-\/>addWidget(collegeTour);}
+\DoxyCodeLine{00296\ \ \ \ \ \ \ \ \ souvenirShop\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00297\ \ \ \ \ \ \ \ \ souvenirShop-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}souvenirShop"{}}));}
+\DoxyCodeLine{00298\ \ \ \ \ \ \ \ \ selectCampus\_comboBox\ =\ \textcolor{keyword}{new}\ QComboBox(souvenirShop);}
+\DoxyCodeLine{00299\ \ \ \ \ \ \ \ \ selectCampus\_comboBox-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}selectCampus\_comboBox"{}}));}
+\DoxyCodeLine{00300\ \ \ \ \ \ \ \ \ selectCampus\_comboBox-\/>setGeometry(QRect(70,\ 50,\ 271,\ 22));}
+\DoxyCodeLine{00301\ \ \ \ \ \ \ \ \ selectCampus\_comboBox-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00302\ \ \ \ \ \ \ \ \ souv\_tableView\ =\ \textcolor{keyword}{new}\ QTableView(souvenirShop);}
+\DoxyCodeLine{00303\ \ \ \ \ \ \ \ \ souv\_tableView-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}souv\_tableView"{}}));}
+\DoxyCodeLine{00304\ \ \ \ \ \ \ \ \ souv\_tableView-\/>setGeometry(QRect(70,\ 90,\ 271,\ 251));}
+\DoxyCodeLine{00305\ \ \ \ \ \ \ \ \ souv\_tableView-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00306\ \ \ \ \ \ \ \ \ souvCart\_tableView\ =\ \textcolor{keyword}{new}\ QTableView(souvenirShop);}
+\DoxyCodeLine{00307\ \ \ \ \ \ \ \ \ souvCart\_tableView-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}souvCart\_tableView"{}}));}
+\DoxyCodeLine{00308\ \ \ \ \ \ \ \ \ souvCart\_tableView-\/>setGeometry(QRect(400,\ 90,\ 371,\ 251));}
+\DoxyCodeLine{00309\ \ \ \ \ \ \ \ \ souvCart\_tableView-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00310\ \ \ \ \ \ \ \ \ backFromSouv\_button\ =\ \textcolor{keyword}{new}\ QPushButton(souvenirShop);}
+\DoxyCodeLine{00311\ \ \ \ \ \ \ \ \ backFromSouv\_button-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}backFromSouv\_button"{}}));}
+\DoxyCodeLine{00312\ \ \ \ \ \ \ \ \ backFromSouv\_button-\/>setGeometry(QRect(700,\ 10,\ 121,\ 28));}
+\DoxyCodeLine{00313\ \ \ \ \ \ \ \ \ backFromSouv\_button-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00314\ \ \ \ \ \ \ \ \ addSouvenir\_button\ =\ \textcolor{keyword}{new}\ QPushButton(souvenirShop);}
+\DoxyCodeLine{00315\ \ \ \ \ \ \ \ \ addSouvenir\_button-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}addSouvenir\_button"{}}));}
+\DoxyCodeLine{00316\ \ \ \ \ \ \ \ \ addSouvenir\_button-\/>setGeometry(QRect(250,\ 400,\ 93,\ 28));}
+\DoxyCodeLine{00317\ \ \ \ \ \ \ \ \ addSouvenir\_button-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00318\ \ \ \ \ \ \ \ \ souv\_comboBox\ =\ \textcolor{keyword}{new}\ QComboBox(souvenirShop);}
+\DoxyCodeLine{00319\ \ \ \ \ \ \ \ \ souv\_comboBox-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}souv\_comboBox"{}}));}
+\DoxyCodeLine{00320\ \ \ \ \ \ \ \ \ souv\_comboBox-\/>setGeometry(QRect(70,\ 360,\ 171,\ 22));}
+\DoxyCodeLine{00321\ \ \ \ \ \ \ \ \ souv\_comboBox-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00322\ \ \ \ \ \ \ \ \ quantity\_spinBox\ =\ \textcolor{keyword}{new}\ QSpinBox(souvenirShop);}
+\DoxyCodeLine{00323\ \ \ \ \ \ \ \ \ quantity\_spinBox-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}quantity\_spinBox"{}}));}
+\DoxyCodeLine{00324\ \ \ \ \ \ \ \ \ quantity\_spinBox-\/>setGeometry(QRect(290,\ 360,\ 42,\ 22));}
+\DoxyCodeLine{00325\ \ \ \ \ \ \ \ \ quantity\_spinBox-\/>setMinimum(1);}
+\DoxyCodeLine{00326\ \ \ \ \ \ \ \ \ souv\_label\ =\ \textcolor{keyword}{new}\ QLabel(souvenirShop);}
+\DoxyCodeLine{00327\ \ \ \ \ \ \ \ \ souv\_label-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}souv\_label"{}}));}
+\DoxyCodeLine{00328\ \ \ \ \ \ \ \ \ souv\_label-\/>setGeometry(QRect(150,\ 20,\ 131,\ 21));}
+\DoxyCodeLine{00329\ \ \ \ \ \ \ \ \ souvCart\_label\ =\ \textcolor{keyword}{new}\ QLabel(souvenirShop);}
+\DoxyCodeLine{00330\ \ \ \ \ \ \ \ \ souvCart\_label-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}souvCart\_label"{}}));}
+\DoxyCodeLine{00331\ \ \ \ \ \ \ \ \ souvCart\_label-\/>setGeometry(QRect(470,\ 20,\ 231,\ 51));}
+\DoxyCodeLine{00332\ \ \ \ \ \ \ \ \ QFont\ font2;}
+\DoxyCodeLine{00333\ \ \ \ \ \ \ \ \ font2.setPointSize(18);}
+\DoxyCodeLine{00334\ \ \ \ \ \ \ \ \ souvCart\_label-\/>setFont(font2);}
+\DoxyCodeLine{00335\ \ \ \ \ \ \ \ \ total\_label\ =\ \textcolor{keyword}{new}\ QLabel(souvenirShop);}
+\DoxyCodeLine{00336\ \ \ \ \ \ \ \ \ total\_label-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}total\_label"{}}));}
+\DoxyCodeLine{00337\ \ \ \ \ \ \ \ \ total\_label-\/>setGeometry(QRect(410,\ 370,\ 56,\ 41));}
+\DoxyCodeLine{00338\ \ \ \ \ \ \ \ \ total\_label-\/>setFont(font1);}
+\DoxyCodeLine{00339\ \ \ \ \ \ \ \ \ dollarSign\ =\ \textcolor{keyword}{new}\ QLabel(souvenirShop);}
+\DoxyCodeLine{00340\ \ \ \ \ \ \ \ \ dollarSign-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}dollarSign"{}}));}
+\DoxyCodeLine{00341\ \ \ \ \ \ \ \ \ dollarSign-\/>setGeometry(QRect(490,\ 360,\ 31,\ 61));}
+\DoxyCodeLine{00342\ \ \ \ \ \ \ \ \ dollarSign-\/>setFont(font2);}
+\DoxyCodeLine{00343\ \ \ \ \ \ \ \ \ checkout\_button\ =\ \textcolor{keyword}{new}\ QPushButton(souvenirShop);}
+\DoxyCodeLine{00344\ \ \ \ \ \ \ \ \ checkout\_button-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}checkout\_button"{}}));}
+\DoxyCodeLine{00345\ \ \ \ \ \ \ \ \ checkout\_button-\/>setGeometry(QRect(400,\ 440,\ 371,\ 28));}
+\DoxyCodeLine{00346\ \ \ \ \ \ \ \ \ checkout\_button-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00347\ \ \ \ \ \ \ \ \ totalCart\_label\ =\ \textcolor{keyword}{new}\ QLabel(souvenirShop);}
+\DoxyCodeLine{00348\ \ \ \ \ \ \ \ \ totalCart\_label-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}totalCart\_label"{}}));}
+\DoxyCodeLine{00349\ \ \ \ \ \ \ \ \ totalCart\_label-\/>setGeometry(QRect(540,\ 370,\ 231,\ 41));}
+\DoxyCodeLine{00350\ \ \ \ \ \ \ \ \ totalCart\_label-\/>setFont(font2);}
+\DoxyCodeLine{00351\ \ \ \ \ \ \ \ \ totalCart\_label-\/>setMouseTracking(\textcolor{keyword}{false});}
+\DoxyCodeLine{00352\ \ \ \ \ \ \ \ \ totalCart\_label-\/>setTextFormat(Qt::AutoText);}
+\DoxyCodeLine{00353\ \ \ \ \ \ \ \ \ totalCart\_label-\/>setScaledContents(\textcolor{keyword}{false});}
+\DoxyCodeLine{00354\ \ \ \ \ \ \ \ \ stackedWidget-\/>addWidget(souvenirShop);}
+\DoxyCodeLine{00355\ \ \ \ \ \ \ \ \ asuCollegeTour\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00356\ \ \ \ \ \ \ \ \ asuCollegeTour-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}asuCollegeTour"{}}));}
+\DoxyCodeLine{00357\ \ \ \ \ \ \ \ \ back\_button\_asu\ =\ \textcolor{keyword}{new}\ QPushButton(asuCollegeTour);}
+\DoxyCodeLine{00358\ \ \ \ \ \ \ \ \ back\_button\_asu-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}back\_button\_asu"{}}));}
+\DoxyCodeLine{00359\ \ \ \ \ \ \ \ \ back\_button\_asu-\/>setGeometry(QRect(700,\ 20,\ 112,\ 34));}
+\DoxyCodeLine{00360\ \ \ \ \ \ \ \ \ back\_button\_asu-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00361\ \ \ \ \ \ \ \ \ enter\_button\_asu\ =\ \textcolor{keyword}{new}\ QPushButton(asuCollegeTour);}
+\DoxyCodeLine{00362\ \ \ \ \ \ \ \ \ enter\_button\_asu-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}enter\_button\_asu"{}}));}
+\DoxyCodeLine{00363\ \ \ \ \ \ \ \ \ enter\_button\_asu-\/>setGeometry(QRect(360,\ 210,\ 112,\ 34));}
+\DoxyCodeLine{00364\ \ \ \ \ \ \ \ \ enter\_button\_asu-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00365\ \ \ \ \ \ \ \ \ asu\_label\_title\ =\ \textcolor{keyword}{new}\ QLabel(asuCollegeTour);}
+\DoxyCodeLine{00366\ \ \ \ \ \ \ \ \ asu\_label\_title-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}asu\_label\_title"{}}));}
+\DoxyCodeLine{00367\ \ \ \ \ \ \ \ \ asu\_label\_title-\/>setGeometry(QRect(200,\ 20,\ 421,\ 51));}
+\DoxyCodeLine{00368\ \ \ \ \ \ \ \ \ asu\_label\_title-\/>setFont(font1);}
+\DoxyCodeLine{00369\ \ \ \ \ \ \ \ \ asu\_label\_prompt\ =\ \textcolor{keyword}{new}\ QLabel(asuCollegeTour);}
+\DoxyCodeLine{00370\ \ \ \ \ \ \ \ \ asu\_label\_prompt-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}asu\_label\_prompt"{}}));}
+\DoxyCodeLine{00371\ \ \ \ \ \ \ \ \ asu\_label\_prompt-\/>setGeometry(QRect(130,\ 100,\ 601,\ 20));}
+\DoxyCodeLine{00372\ \ \ \ \ \ \ \ \ asu\_combo\ =\ \textcolor{keyword}{new}\ QComboBox(asuCollegeTour);}
+\DoxyCodeLine{00373\ \ \ \ \ \ \ \ \ asu\_combo-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}asu\_combo"{}}));}
+\DoxyCodeLine{00374\ \ \ \ \ \ \ \ \ asu\_combo-\/>setGeometry(QRect(360,\ 150,\ 111,\ 26));}
+\DoxyCodeLine{00375\ \ \ \ \ \ \ \ \ asu\_combo-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00376\ \ \ \ \ \ \ \ \ stackedWidget-\/>addWidget(asuCollegeTour);}
+\DoxyCodeLine{00377\ \ \ \ \ \ \ \ \ SortCollegeTour\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00378\ \ \ \ \ \ \ \ \ SortCollegeTour-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}SortCollegeTour"{}}));}
+\DoxyCodeLine{00379\ \ \ \ \ \ \ \ \ horizontalLayoutWidget\ =\ \textcolor{keyword}{new}\ QWidget(SortCollegeTour);}
+\DoxyCodeLine{00380\ \ \ \ \ \ \ \ \ horizontalLayoutWidget-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}horizontalLayoutWidget"{}}));}
+\DoxyCodeLine{00381\ \ \ \ \ \ \ \ \ horizontalLayoutWidget-\/>setGeometry(QRect(30,\ 370,\ 331,\ 80));}
+\DoxyCodeLine{00382\ \ \ \ \ \ \ \ \ horizontalLayout\_3\ =\ \textcolor{keyword}{new}\ QHBoxLayout(horizontalLayoutWidget);}
+\DoxyCodeLine{00383\ \ \ \ \ \ \ \ \ horizontalLayout\_3-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}horizontalLayout\_3"{}}));}
+\DoxyCodeLine{00384\ \ \ \ \ \ \ \ \ horizontalLayout\_3-\/>setContentsMargins(0,\ 0,\ 0,\ 0);}
+\DoxyCodeLine{00385\ \ \ \ \ \ \ \ \ total\_dist\_label\ =\ \textcolor{keyword}{new}\ QLabel(horizontalLayoutWidget);}
+\DoxyCodeLine{00386\ \ \ \ \ \ \ \ \ total\_dist\_label-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}total\_dist\_label"{}}));}
+\DoxyCodeLine{00387\ \ \ \ \ \ \ \ \ total\_dist\_label-\/>setFont(font);}
+\DoxyCodeLine{00388\ \ \ \ \ \ \ \ \ total\_dist\_label-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00389\ }
+\DoxyCodeLine{00390\ \ \ \ \ \ \ \ \ horizontalLayout\_3-\/>addWidget(total\_dist\_label);}
+\DoxyCodeLine{00391\ }
+\DoxyCodeLine{00392\ \ \ \ \ \ \ \ \ distanceNum\_label\ =\ \textcolor{keyword}{new}\ QLabel(horizontalLayoutWidget);}
+\DoxyCodeLine{00393\ \ \ \ \ \ \ \ \ distanceNum\_label-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}distanceNum\_label"{}}));}
+\DoxyCodeLine{00394\ \ \ \ \ \ \ \ \ distanceNum\_label-\/>setFont(font1);}
+\DoxyCodeLine{00395\ \ \ \ \ \ \ \ \ distanceNum\_label-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00396\ \ \ \ \ \ \ \ \ distanceNum\_label-\/>setAlignment(Qt::AlignCenter);}
+\DoxyCodeLine{00397\ }
+\DoxyCodeLine{00398\ \ \ \ \ \ \ \ \ horizontalLayout\_3-\/>addWidget(distanceNum\_label);}
+\DoxyCodeLine{00399\ }
+\DoxyCodeLine{00400\ \ \ \ \ \ \ \ \ label\_2\ =\ \textcolor{keyword}{new}\ QLabel(horizontalLayoutWidget);}
+\DoxyCodeLine{00401\ \ \ \ \ \ \ \ \ label\_2-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}label\_2"{}}));}
+\DoxyCodeLine{00402\ \ \ \ \ \ \ \ \ label\_2-\/>setFont(font);}
+\DoxyCodeLine{00403\ \ \ \ \ \ \ \ \ label\_2-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00404\ }
+\DoxyCodeLine{00405\ \ \ \ \ \ \ \ \ horizontalLayout\_3-\/>addWidget(label\_2);}
+\DoxyCodeLine{00406\ }
+\DoxyCodeLine{00407\ \ \ \ \ \ \ \ \ verticalLayoutWidget\ =\ \textcolor{keyword}{new}\ QWidget(SortCollegeTour);}
+\DoxyCodeLine{00408\ \ \ \ \ \ \ \ \ verticalLayoutWidget-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}verticalLayoutWidget"{}}));}
+\DoxyCodeLine{00409\ \ \ \ \ \ \ \ \ verticalLayoutWidget-\/>setGeometry(QRect(449,\ 80,\ 321,\ 371));}
+\DoxyCodeLine{00410\ \ \ \ \ \ \ \ \ verticalLayout\_3\ =\ \textcolor{keyword}{new}\ QVBoxLayout(verticalLayoutWidget);}
+\DoxyCodeLine{00411\ \ \ \ \ \ \ \ \ verticalLayout\_3-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}verticalLayout\_3"{}}));}
+\DoxyCodeLine{00412\ \ \ \ \ \ \ \ \ verticalLayout\_3-\/>setContentsMargins(0,\ 0,\ 0,\ 0);}
+\DoxyCodeLine{00413\ \ \ \ \ \ \ \ \ souvTitleLabel\ =\ \textcolor{keyword}{new}\ QLabel(verticalLayoutWidget);}
+\DoxyCodeLine{00414\ \ \ \ \ \ \ \ \ souvTitleLabel-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}souvTitleLabel"{}}));}
+\DoxyCodeLine{00415\ \ \ \ \ \ \ \ \ QFont\ font3;}
+\DoxyCodeLine{00416\ \ \ \ \ \ \ \ \ font3.setPointSize(14);}
+\DoxyCodeLine{00417\ \ \ \ \ \ \ \ \ souvTitleLabel-\/>setFont(font3);}
+\DoxyCodeLine{00418\ \ \ \ \ \ \ \ \ souvTitleLabel-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00419\ \ \ \ \ \ \ \ \ souvTitleLabel-\/>setAlignment(Qt::AlignCenter);}
+\DoxyCodeLine{00420\ }
+\DoxyCodeLine{00421\ \ \ \ \ \ \ \ \ verticalLayout\_3-\/>addWidget(souvTitleLabel);}
+\DoxyCodeLine{00422\ }
+\DoxyCodeLine{00423\ \ \ \ \ \ \ \ \ horizontalLayout\_7\ =\ \textcolor{keyword}{new}\ QHBoxLayout();}
+\DoxyCodeLine{00424\ \ \ \ \ \ \ \ \ horizontalLayout\_7-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}horizontalLayout\_7"{}}));}
+\DoxyCodeLine{00425\ \ \ \ \ \ \ \ \ souvFinal\_listView\ =\ \textcolor{keyword}{new}\ QListView(verticalLayoutWidget);}
+\DoxyCodeLine{00426\ \ \ \ \ \ \ \ \ souvFinal\_listView-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}souvFinal\_listView"{}}));}
+\DoxyCodeLine{00427\ \ \ \ \ \ \ \ \ souvFinal\_listView-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00428\ }
+\DoxyCodeLine{00429\ \ \ \ \ \ \ \ \ horizontalLayout\_7-\/>addWidget(souvFinal\_listView);}
+\DoxyCodeLine{00430\ }
+\DoxyCodeLine{00431\ \ \ \ \ \ \ \ \ quantityFinal\_listView\ =\ \textcolor{keyword}{new}\ QListView(verticalLayoutWidget);}
+\DoxyCodeLine{00432\ \ \ \ \ \ \ \ \ quantityFinal\_listView-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}quantityFinal\_listView"{}}));}
+\DoxyCodeLine{00433\ \ \ \ \ \ \ \ \ quantityFinal\_listView-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00434\ }
+\DoxyCodeLine{00435\ \ \ \ \ \ \ \ \ horizontalLayout\_7-\/>addWidget(quantityFinal\_listView);}
+\DoxyCodeLine{00436\ }
+\DoxyCodeLine{00437\ }
+\DoxyCodeLine{00438\ \ \ \ \ \ \ \ \ verticalLayout\_3-\/>addLayout(horizontalLayout\_7);}
+\DoxyCodeLine{00439\ }
+\DoxyCodeLine{00440\ \ \ \ \ \ \ \ \ gridLayout\_2\ =\ \textcolor{keyword}{new}\ QGridLayout();}
+\DoxyCodeLine{00441\ \ \ \ \ \ \ \ \ gridLayout\_2-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}gridLayout\_2"{}}));}
+\DoxyCodeLine{00442\ \ \ \ \ \ \ \ \ finish\_button\ =\ \textcolor{keyword}{new}\ QPushButton(verticalLayoutWidget);}
+\DoxyCodeLine{00443\ \ \ \ \ \ \ \ \ finish\_button-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}finish\_button"{}}));}
+\DoxyCodeLine{00444\ \ \ \ \ \ \ \ \ finish\_button-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00445\ }
+\DoxyCodeLine{00446\ \ \ \ \ \ \ \ \ gridLayout\_2-\/>addWidget(finish\_button,\ 1,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00447\ }
+\DoxyCodeLine{00448\ \ \ \ \ \ \ \ \ horizontalLayout\_5\ =\ \textcolor{keyword}{new}\ QHBoxLayout();}
+\DoxyCodeLine{00449\ \ \ \ \ \ \ \ \ horizontalLayout\_5-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}horizontalLayout\_5"{}}));}
+\DoxyCodeLine{00450\ \ \ \ \ \ \ \ \ totalCost\_label\ =\ \textcolor{keyword}{new}\ QLabel(verticalLayoutWidget);}
+\DoxyCodeLine{00451\ \ \ \ \ \ \ \ \ totalCost\_label-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}totalCost\_label"{}}));}
+\DoxyCodeLine{00452\ \ \ \ \ \ \ \ \ totalCost\_label-\/>setFont(font3);}
+\DoxyCodeLine{00453\ }
+\DoxyCodeLine{00454\ \ \ \ \ \ \ \ \ horizontalLayout\_5-\/>addWidget(totalCost\_label);}
+\DoxyCodeLine{00455\ }
+\DoxyCodeLine{00456\ \ \ \ \ \ \ \ \ totalNum\_label\ =\ \textcolor{keyword}{new}\ QLabel(verticalLayoutWidget);}
+\DoxyCodeLine{00457\ \ \ \ \ \ \ \ \ totalNum\_label-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}totalNum\_label"{}}));}
+\DoxyCodeLine{00458\ \ \ \ \ \ \ \ \ totalNum\_label-\/>setFont(font3);}
+\DoxyCodeLine{00459\ \ \ \ \ \ \ \ \ totalNum\_label-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00460\ }
+\DoxyCodeLine{00461\ \ \ \ \ \ \ \ \ horizontalLayout\_5-\/>addWidget(totalNum\_label);}
+\DoxyCodeLine{00462\ }
+\DoxyCodeLine{00463\ }
+\DoxyCodeLine{00464\ \ \ \ \ \ \ \ \ gridLayout\_2-\/>addLayout(horizontalLayout\_5,\ 0,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00465\ }
+\DoxyCodeLine{00466\ }
+\DoxyCodeLine{00467\ \ \ \ \ \ \ \ \ verticalLayout\_3-\/>addLayout(gridLayout\_2);}
+\DoxyCodeLine{00468\ }
+\DoxyCodeLine{00469\ \ \ \ \ \ \ \ \ startCampus\_label\ =\ \textcolor{keyword}{new}\ QLabel(SortCollegeTour);}
+\DoxyCodeLine{00470\ \ \ \ \ \ \ \ \ startCampus\_label-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}startCampus\_label"{}}));}
+\DoxyCodeLine{00471\ \ \ \ \ \ \ \ \ startCampus\_label-\/>setGeometry(QRect(30,\ 30,\ 551,\ 31));}
+\DoxyCodeLine{00472\ \ \ \ \ \ \ \ \ verticalLayoutWidget\_2\ =\ \textcolor{keyword}{new}\ QWidget(SortCollegeTour);}
+\DoxyCodeLine{00473\ \ \ \ \ \ \ \ \ verticalLayoutWidget\_2-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}verticalLayoutWidget\_2"{}}));}
+\DoxyCodeLine{00474\ \ \ \ \ \ \ \ \ verticalLayoutWidget\_2-\/>setGeometry(QRect(30,\ 82,\ 331,\ 271));}
+\DoxyCodeLine{00475\ \ \ \ \ \ \ \ \ verticalLayout\_4\ =\ \textcolor{keyword}{new}\ QVBoxLayout(verticalLayoutWidget\_2);}
+\DoxyCodeLine{00476\ \ \ \ \ \ \ \ \ verticalLayout\_4-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}verticalLayout\_4"{}}));}
+\DoxyCodeLine{00477\ \ \ \ \ \ \ \ \ verticalLayout\_4-\/>setContentsMargins(0,\ 0,\ 0,\ 0);}
+\DoxyCodeLine{00478\ \ \ \ \ \ \ \ \ gridLayout\_4\ =\ \textcolor{keyword}{new}\ QGridLayout();}
+\DoxyCodeLine{00479\ \ \ \ \ \ \ \ \ gridLayout\_4-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}gridLayout\_4"{}}));}
+\DoxyCodeLine{00480\ \ \ \ \ \ \ \ \ label\ =\ \textcolor{keyword}{new}\ QLabel(verticalLayoutWidget\_2);}
+\DoxyCodeLine{00481\ \ \ \ \ \ \ \ \ label-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}label"{}}));}
+\DoxyCodeLine{00482\ \ \ \ \ \ \ \ \ label-\/>setFont(font3);}
+\DoxyCodeLine{00483\ \ \ \ \ \ \ \ \ label-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00484\ \ \ \ \ \ \ \ \ label-\/>setAlignment(Qt::AlignCenter);}
+\DoxyCodeLine{00485\ }
+\DoxyCodeLine{00486\ \ \ \ \ \ \ \ \ gridLayout\_4-\/>addWidget(label,\ 0,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00487\ }
+\DoxyCodeLine{00488\ \ \ \ \ \ \ \ \ sort\_listWidget\ =\ \textcolor{keyword}{new}\ QListWidget(verticalLayoutWidget\_2);}
+\DoxyCodeLine{00489\ \ \ \ \ \ \ \ \ sort\_listWidget-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}sort\_listWidget"{}}));}
+\DoxyCodeLine{00490\ \ \ \ \ \ \ \ \ sort\_listWidget-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}background-\/color:\ rgb(0,\ 0,\ 0)"{}}));}
+\DoxyCodeLine{00491\ }
+\DoxyCodeLine{00492\ \ \ \ \ \ \ \ \ gridLayout\_4-\/>addWidget(sort\_listWidget,\ 1,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00493\ }
+\DoxyCodeLine{00494\ }
+\DoxyCodeLine{00495\ \ \ \ \ \ \ \ \ verticalLayout\_4-\/>addLayout(gridLayout\_4);}
+\DoxyCodeLine{00496\ }
+\DoxyCodeLine{00497\ \ \ \ \ \ \ \ \ stackedWidget-\/>addWidget(SortCollegeTour);}
+\DoxyCodeLine{00498\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstudentpage}{studentpage}}-\/>setCentralWidget(centralwidget);}
+\DoxyCodeLine{00499\ \ \ \ \ \ \ \ \ menubar\ =\ \textcolor{keyword}{new}\ QMenuBar(\mbox{\hyperlink{classstudentpage}{studentpage}});}
+\DoxyCodeLine{00500\ \ \ \ \ \ \ \ \ menubar-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}menubar"{}}));}
+\DoxyCodeLine{00501\ \ \ \ \ \ \ \ \ menubar-\/>setGeometry(QRect(0,\ 0,\ 912,\ 37));}
+\DoxyCodeLine{00502\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstudentpage}{studentpage}}-\/>setMenuBar(menubar);}
+\DoxyCodeLine{00503\ \ \ \ \ \ \ \ \ statusbar\ =\ \textcolor{keyword}{new}\ QStatusBar(\mbox{\hyperlink{classstudentpage}{studentpage}});}
+\DoxyCodeLine{00504\ \ \ \ \ \ \ \ \ statusbar-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}statusbar"{}}));}
+\DoxyCodeLine{00505\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstudentpage}{studentpage}}-\/>setStatusBar(statusbar);}
+\DoxyCodeLine{00506\ }
+\DoxyCodeLine{00507\ \ \ \ \ \ \ \ \ retranslateUi(\mbox{\hyperlink{classstudentpage}{studentpage}});}
+\DoxyCodeLine{00508\ }
+\DoxyCodeLine{00509\ \ \ \ \ \ \ \ \ stackedWidget-\/>setCurrentIndex(6);}
+\DoxyCodeLine{00510\ }
+\DoxyCodeLine{00511\ }
+\DoxyCodeLine{00512\ \ \ \ \ \ \ \ \ QMetaObject::connectSlotsByName(\mbox{\hyperlink{classstudentpage}{studentpage}});}
+\DoxyCodeLine{00513\ \ \ \ \ \}\ \textcolor{comment}{//\ setupUi}}
+\DoxyCodeLine{00514\ }
+\DoxyCodeLine{00515\ \ \ \ \ \textcolor{keywordtype}{void}\ retranslateUi(QMainWindow\ *\mbox{\hyperlink{classstudentpage}{studentpage}})}
+\DoxyCodeLine{00516\ \ \ \ \ \{}
+\DoxyCodeLine{00517\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstudentpage}{studentpage}}-\/>setWindowTitle(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00518\ \ \ \ \ \ \ \ \ campDB\_button-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}DISPLAY\ DATABASE"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00519\ \ \ \ \ \ \ \ \ welcome\_label-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}\ \ \ \ STUDENT\ MENU"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00520\ \ \ \ \ \ \ \ \ campDB\_texEdit-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}<html><head/><body><p><span\ style=\(\backslash\)"{}\ font-\/size:24pt;\ font-\/weight:600;\ text-\/decoration:\ underline;\(\backslash\)"{}>See\ Campus\ Database:</span></p></body></html>"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00521\ \ \ \ \ \ \ \ \ tourType\_label-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}<html><head/><body><p><span\ style=\(\backslash\)"{}\ font-\/size:24pt;\ font-\/weight:600;\ text-\/decoration:\ underline;\(\backslash\)"{}>Select\ Tour\ Type:</span></p></body></html>"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00522\ \ \ \ \ \ \ \ \ UCI\_button-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}UCI\ TRIP"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00523\ \ \ \ \ \ \ \ \ Saddle\_button-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}SADDLEBACK\ TRIP"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00524\ \ \ \ \ \ \ \ \ ASU\_button-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}ASU\ TRIP"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00525\ \ \ \ \ \ \ \ \ custom\_button-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}CUSTOM\ TRIP"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00526\ \ \ \ \ \ \ \ \ UCI\_textEdit-\/>setPlainText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Start\ at\ the\ University\ of\ California,\ Irvine\ (UCI)\ and\ tour\ eleven\ different\ college\ campuses."{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00527\ \ \ \ \ \ \ \ \ Saddle\_textEdit-\/>setPlainText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Start\ at\ Saddleback\ Community\ College,\ \ tour\ thirteen\ college\ campuses.\ \ To\ do\ this\ trip,\ \ an\ admin\ must\ add\ two\ more\ colleges."{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00528\ \ \ \ \ \ \ \ \ ASU\_textEdit-\/>setPlainText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Start\ at\ Arizona\ State\ University\ (ASU),\ \ choose\ any\ number\ of\ other\ other\ colleges\ to\ visit\ before\ you\ start\ your\ trip\ and\ choose\ which\ colleges\ to\ visit."{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00529\ \ \ \ \ \ \ \ \ custom\_textEdit-\/>setPlainText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Choose\ any\ of\ the\ colleges\ that\ you\ wish\ to\ tour\ from\ the\ database."{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00530\ \ \ \ \ \ \ \ \ back\_button\_select-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Back"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00531\ \ \ \ \ \ \ \ \ tour\_textEdit-\/>setPlainText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}In\ this\ program,\ \ you\ will\ be\ able\ to\ select\ one\ of\ four\ different\ tour\ types\ in\ order\ to\ create\ your\ desired\ college\ tour\ plan.\ \ After\ your\ colleges\ and\ trip\ has\ been\ selected,\ \ you\ will\ be\ able\ to\ purchase\ any\ number\ of\ souvenirs\ from\ the\ campuses\ you\ visit.\ \ Then\ you\ will\ receieve\ a\ sorted\ college\ tour\ plan\ and\ a\ souvenir\ receipt\ from\ your\ trip\ that\ details\ the\ distance\ and\ all\ other\ necessary\ information."{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00532\ \ \ \ \ \ \ \ \ campus\_label-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Current\ Campus"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00533\ \ \ \ \ \ \ \ \ database\_label-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Database"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00534\ \ \ \ \ \ \ \ \ other\_button-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Other\ Campuses"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00535\ \ \ \ \ \ \ \ \ souv\_button-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Souvenirs"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00536\ \ \ \ \ \ \ \ \ back\_button\_db-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Back"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00537\ \ \ \ \ \ \ \ \ start\_label-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Starting\ Campus"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00538\ \ \ \ \ \ \ \ \ enter\_button\_1-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Enter"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00539\ \ \ \ \ \ \ \ \ back\_button\_custom-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Back"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00540\ \ \ \ \ \ \ \ \ avali\_label\_1-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Avaliable\ Campuses"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00541\ \ \ \ \ \ \ \ \ next\_label-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Next\ Campus"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00542\ \ \ \ \ \ \ \ \ done\_button-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Done"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00543\ \ \ \ \ \ \ \ \ enter\_button\_2-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Enter"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00544\ \ \ \ \ \ \ \ \ avali\_label\_2-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Avaliable\ Campuses"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00545\ \ \ \ \ \ \ \ \ select\_label-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Selected\ Campuses"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00546\ \ \ \ \ \ \ \ \ back\_button\_general-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Back"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00547\ \ \ \ \ \ \ \ \ backFromSouv\_button-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Back\ "{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00548\ \ \ \ \ \ \ \ \ addSouvenir\_button-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Add"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00549\ \ \ \ \ \ \ \ \ souv\_label-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}<html><head/><body><p><span\ style=\(\backslash\)"{}\ font-\/size:18pt;\ font-\/weight:600;\(\backslash\)"{}>Souvenirs\ of:\ </span></p></body></html>"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00550\ \ \ \ \ \ \ \ \ souvCart\_label-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}<html><head/><body><p\ align=\(\backslash\)"{}center\(\backslash\)"{}><span\ style=\(\backslash\)"{}\ font-\/weight:600;\ text-\/decoration:\ underline;\(\backslash\)"{}>Souvenir\ Cart</span></p></body></html>"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00551\ \ \ \ \ \ \ \ \ total\_label-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Total:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00552\ \ \ \ \ \ \ \ \ dollarSign-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}\$"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00553\ \ \ \ \ \ \ \ \ checkout\_button-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Checkout"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00554\ \ \ \ \ \ \ \ \ totalCart\_label-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}0.00"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00555\ \ \ \ \ \ \ \ \ back\_button\_asu-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Back"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00556\ \ \ \ \ \ \ \ \ enter\_button\_asu-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Enter"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00557\ \ \ \ \ \ \ \ \ asu\_label\_title-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}<html><head/><body><p\ align=\(\backslash\)"{}center\(\backslash\)"{}><span\ style=\(\backslash\)"{}\ font-\/size:24pt;\ font-\/weight:600;\ text-\/decoration:\ underline;\(\backslash\)"{}>ASU\ College\ Tour\ -\/\ Starting\ at\ ASU</span></p></body></html>"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00558\ \ \ \ \ \ \ \ \ asu\_label\_prompt-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}<html><head/><body><p><span\ style=\(\backslash\)"{}\ font-\/size:18pt;\ font-\/weight:600;\(\backslash\)"{}>Enter\ the\ number\ of\ colleges\ you\ would\ like\ to\ visit\ (including\ ASU):</span></p></body></html>"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00559\ \ \ \ \ \ \ \ \ total\_dist\_label-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Total\ Distance"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00560\ \ \ \ \ \ \ \ \ distanceNum\_label-\/>setText(QString());}
+\DoxyCodeLine{00561\ \ \ \ \ \ \ \ \ label\_2-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}miles"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00562\ \ \ \ \ \ \ \ \ souvTitleLabel-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Souvenirs"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00563\ \ \ \ \ \ \ \ \ finish\_button-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Finish"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00564\ \ \ \ \ \ \ \ \ totalCost\_label-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Total\ Cost:\ \ \$"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00565\ \ \ \ \ \ \ \ \ totalNum\_label-\/>setText(QString());}
+\DoxyCodeLine{00566\ \ \ \ \ \ \ \ \ startCampus\_label-\/>setText(QString());}
+\DoxyCodeLine{00567\ \ \ \ \ \ \ \ \ label-\/>setText(QApplication::translate(\textcolor{stringliteral}{"{}studentpage"{}},\ \textcolor{stringliteral}{"{}Sorted\ College\ Tour\ Plan"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00568\ \ \ \ \ \}\ \textcolor{comment}{//\ retranslateUi}}
+\DoxyCodeLine{00569\ }
+\DoxyCodeLine{00570\ \};}
+\DoxyCodeLine{00571\ }
+\DoxyCodeLine{00572\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00573\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui_1_1studentpage}{studentpage}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_ui__studentpage}{Ui\_studentpage}}\ \{\};}
+\DoxyCodeLine{00574\ \}\ \textcolor{comment}{//\ namespace\ Ui}}
+\DoxyCodeLine{00575\ }
+\DoxyCodeLine{00576\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00577\ }
+\DoxyCodeLine{00578\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UI\_STUDENTPAGE\_H}}
+
+\end{DoxyCode}
