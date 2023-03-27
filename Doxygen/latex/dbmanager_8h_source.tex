@@ -1,0 +1,38 @@
+\hypertarget{dbmanager_8h_source}{}\doxysection{dbmanager.\+h}
+\label{dbmanager_8h_source}\index{C:/Users/Jacki/Downloads/CSOneD-\/-\/First-\/Project-\/-\/New-\/Menu/CSOneD-\/-\/First-\/Project-\/-\/New-\/Menu/Qt/dbmanager.h@{C:/Users/Jacki/Downloads/CSOneD-\/-\/First-\/Project-\/-\/New-\/Menu/CSOneD-\/-\/First-\/Project-\/-\/New-\/Menu/Qt/dbmanager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DBMANAGER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DBMANAGER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QtSql>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QVector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QQueue>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classdb_manager}{dbManager}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{classdb_manager}{dbManager}}();}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{classdb_manager}{\string~dbManager}}();}
+\DoxyCodeLine{00015\ \ \ \ \ QSqlQueryModel\ *loadCampusNamesOnly();}
+\DoxyCodeLine{00016\ \ \ \ \ QSqlQueryModel\ *loadRemainingCampusNamesOnly(QVector<QString>\ campuses);}
+\DoxyCodeLine{00017\ \ \ \ \ QSqlQueryModel\ *loadOtherCampusAndDist(QString\ campus);}
+\DoxyCodeLine{00018\ \ \ \ \ QSqlQueryModel\ *loadCampusSouvenirs(QString\ campus);}
+\DoxyCodeLine{00019\ \ \ \ \ QSqlQueryModel*\ loadSouvCart(QString\ sQry);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ createCart();}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ deleteCart();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ updateCartQuantity(QString\ campus,\ QString\ souv,\ \textcolor{keywordtype}{int}\ quantity);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{double}\ GetTotalCost(QString\ campusIn,\ QString\ souvIn);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{double}\ GetDistBtwn(QString\ start,\ QString\ end);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ checkCampusName(QString\ campus);}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ GetCampusCount(QString\ campus);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ QSqlDatabase\ \mbox{\hyperlink{classdb_manager_a971a8216e03dcf261f12fabe308b6572}{tourDB}};\ }
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DBMANAGER\_H}}
+
+\end{DoxyCode}

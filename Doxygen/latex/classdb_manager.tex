@@ -1,0 +1,61 @@
+\hypertarget{classdb_manager}{}\doxysection{db\+Manager Class Reference}
+\label{classdb_manager}\index{dbManager@{dbManager}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdb_manager_a09d968b89b2cd98c167c07adea4b69fb}\label{classdb_manager_a09d968b89b2cd98c167c07adea4b69fb}} 
+QSql\+Query\+Model $\ast$ {\bfseries load\+Campus\+Names\+Only} ()
+\item 
+\mbox{\Hypertarget{classdb_manager_a779fdd702aad083cf4bff94a62cc4eb6}\label{classdb_manager_a779fdd702aad083cf4bff94a62cc4eb6}} 
+QSql\+Query\+Model $\ast$ {\bfseries load\+Remaining\+Campus\+Names\+Only} (QVector$<$ QString $>$ campuses)
+\item 
+\mbox{\Hypertarget{classdb_manager_a45d41595a676a2e8db5e8cad9550038b}\label{classdb_manager_a45d41595a676a2e8db5e8cad9550038b}} 
+QSql\+Query\+Model $\ast$ {\bfseries load\+Other\+Campus\+And\+Dist} (QString campus)
+\item 
+\mbox{\Hypertarget{classdb_manager_ae0363da6de298ef84c78ede7d1751c35}\label{classdb_manager_ae0363da6de298ef84c78ede7d1751c35}} 
+QSql\+Query\+Model $\ast$ {\bfseries load\+Campus\+Souvenirs} (QString campus)
+\item 
+\mbox{\Hypertarget{classdb_manager_a0d31c44bb2708a04839079f92e939aae}\label{classdb_manager_a0d31c44bb2708a04839079f92e939aae}} 
+QSql\+Query\+Model $\ast$ {\bfseries load\+Souv\+Cart} (QString s\+Qry)
+\item 
+\mbox{\Hypertarget{classdb_manager_afa36ba7fd16bb6b97b297770356f8e83}\label{classdb_manager_afa36ba7fd16bb6b97b297770356f8e83}} 
+void {\bfseries create\+Cart} ()
+\item 
+\mbox{\Hypertarget{classdb_manager_ae48e9e58a4228d2409bb5cf90c80c189}\label{classdb_manager_ae48e9e58a4228d2409bb5cf90c80c189}} 
+void {\bfseries delete\+Cart} ()
+\item 
+\mbox{\Hypertarget{classdb_manager_a53a371fbc8d927781ee964588678b716}\label{classdb_manager_a53a371fbc8d927781ee964588678b716}} 
+void {\bfseries update\+Cart\+Quantity} (QString campus, QString souv, int quantity)
+\item 
+\mbox{\Hypertarget{classdb_manager_a8ceb6c3e92684ef0b180a9484c4942cf}\label{classdb_manager_a8ceb6c3e92684ef0b180a9484c4942cf}} 
+double {\bfseries Get\+Total\+Cost} (QString campus\+In, QString souv\+In)
+\item 
+\mbox{\Hypertarget{classdb_manager_a42f566787825aa93e623db74013a0e7f}\label{classdb_manager_a42f566787825aa93e623db74013a0e7f}} 
+double {\bfseries Get\+Dist\+Btwn} (QString start, QString end)
+\item 
+\mbox{\Hypertarget{classdb_manager_a6a064ac1066c1cf37ef8341b551bac8c}\label{classdb_manager_a6a064ac1066c1cf37ef8341b551bac8c}} 
+bool {\bfseries check\+Campus\+Name} (QString campus)
+\item 
+\mbox{\Hypertarget{classdb_manager_af6e009ed079c7f7717732f123544aa83}\label{classdb_manager_af6e009ed079c7f7717732f123544aa83}} 
+int {\bfseries Get\+Campus\+Count} (QString campus)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QSql\+Database \mbox{\hyperlink{classdb_manager_a971a8216e03dcf261f12fabe308b6572}{tour\+DB}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classdb_manager_a971a8216e03dcf261f12fabe308b6572}\label{classdb_manager_a971a8216e03dcf261f12fabe308b6572}} 
+\index{dbManager@{dbManager}!tourDB@{tourDB}}
+\index{tourDB@{tourDB}!dbManager@{dbManager}}
+\doxysubsubsection{\texorpdfstring{tourDB}{tourDB}}
+{\footnotesize\ttfamily QSql\+Database db\+Manager\+::tour\+DB\hspace{0.3cm}{\ttfamily [private]}}
+
+QSql\+Database variable 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jacki/\+Downloads/\+CSOne\+D-\/-\/\+First-\/\+Project-\/-\/\+New-\/\+Menu/\+CSOne\+D-\/-\/\+First-\/\+Project-\/-\/\+New-\/\+Menu/\+Qt/dbmanager.\+h\item 
+C\+:/\+Users/\+Jacki/\+Downloads/\+CSOne\+D-\/-\/\+First-\/\+Project-\/-\/\+New-\/\+Menu/\+CSOne\+D-\/-\/\+First-\/\+Project-\/-\/\+New-\/\+Menu/\+Qt/dbmanager.\+cpp\end{DoxyCompactItemize}

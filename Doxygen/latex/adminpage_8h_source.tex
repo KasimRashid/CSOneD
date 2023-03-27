@@ -1,0 +1,58 @@
+\hypertarget{adminpage_8h_source}{}\doxysection{adminpage.\+h}
+\label{adminpage_8h_source}\index{C:/Users/Jacki/Downloads/CSOneD-\/-\/First-\/Project-\/-\/New-\/Menu/CSOneD-\/-\/First-\/Project-\/-\/New-\/Menu/Qt/adminpage.h@{C:/Users/Jacki/Downloads/CSOneD-\/-\/First-\/Project-\/-\/New-\/Menu/CSOneD-\/-\/First-\/Project-\/-\/New-\/Menu/Qt/adminpage.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ ADMINPAGE\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ ADMINPAGE\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}ui\_adminpage.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}dbmanager.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QtSql>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QSqlQuery>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QMessageBox>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QInputDialog>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QIntValidator>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classadminpage}{adminpage}};}
+\DoxyCodeLine{00016\ \}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classadminpage}{adminpage}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classadminpage}{adminpage}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{classadminpage}{\string~adminpage}}();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ setupConnections();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ changeToAdminHomePage();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ changeToSouvenirPage();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ changeToSouvenirPricePage();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ changeToSouvenirDeletePage();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ showSouvenirComboBoxDeletePage(QSqlQueryModel\ *model);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ showCampusComboBoxAddPage(QSqlQueryModel\ *\ model);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ showchangeSouvenirPageCampusNameComboBox(QSqlQueryModel\ *\ model);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_viewDistancesBtn\_clicked();}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_viewSouvenirBtn\_clicked();}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classadminpage_a744940dc1835239a8090a5aae146546d}{on\_addCampusThroughInputFile\_clicked}}();}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classadminpage_a860e5fc2a559a3783a9622de9638aba8}{on\_addSouvenirThroughInputFile\_clicked}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_changeSouvPriceBackBtn\_clicked();}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_changeSouvenirPriceBtn\_clicked();}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_updateSouvenirPriceBtn\_clicked();}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_addSouvenirBtn\_clicked();}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_createSouvenirBtn\_clicked();}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_deleteSouvenirBtn\_clicked();}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_deletePageBackBtn\_clicked();}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_deleteSouvenirConfirmBtn\_clicked();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_ui_1_1adminpage}{Ui::adminpage}}\ *ui;}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{classdb_manager}{dbManager}}\ database\_;}
+\DoxyCodeLine{00051\ \};}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ADMINPAGE\_H}}
+
+\end{DoxyCode}
